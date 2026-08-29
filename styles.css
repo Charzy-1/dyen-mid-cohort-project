@@ -62,12 +62,19 @@ body {
   }
 
 /* NAVBAR STYLING BELOW */
+header {
+  position: sticky;
+  top: 0; 
+  z-index: 1000;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 5%;
   border-bottom: 1px solid var(--green-dark);
+  backdrop-filter: blur(8px);
 }
 
 
@@ -82,15 +89,12 @@ body {
   color: var(--white);
   font-size: 13px;
   font-family: var(--font-body);
-  backdrop-filter: blur(8px);
-  position: sticky;
-  top: 0; 
-  z-index: 1000;
 }
 
 .logo {
   font-family: var(--font-display);
   font-weight: 700;
+  font-size: 22px;
 }
 
 .nav-links {
@@ -116,7 +120,7 @@ body {
 
 .hero-content {
   text-align: center;
-  max-width: 720px;
+  max-width: 920px;
   margin: 0 auto;
   position: relative;
 }
@@ -151,8 +155,15 @@ body {
     margin: 0 auto 32px;
 }
 
-
-
+.hero-form input {
+  width: 250px;
+  max-width: 100%;
+  padding: 15px 16px; 
+  border-radius: 100px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  font-size: 14px;
+}
 
 
 
@@ -165,5 +176,11 @@ body {
 @media (max-width: 768px) {
   .nav-links {
     display: none;
+  }
+
+  .hero-form input {
+    width: 200px;
+    padding: 10px 16px; 
+    margin-bottom: var(--space-2);
   }
 }
