@@ -165,8 +165,9 @@ header {
   font-size: 14px;
 }
 
+/* SPONSORS STYLING */
 .sponsors-container {
-  height: 150px;
+  height: 120px;
   background: var(--primary);
   display: flex;
   justify-content: space-between;
@@ -183,6 +184,39 @@ header {
   letter-spacing: 0.02em 0.4px;
 }
 
+/* WHY MEMBERSHIP SECTION */
+.why-member-content {
+  padding: 75px 5%;
+  text-align: center;
+}
+
+.why-member-content h2 {
+  font-size: 36px;
+  margin-bottom: var(--space-3);
+}
+
+.why-member-content p {
+  font-size: 16px;
+  color: var(--ink);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* GRID SECTION */
+.why-member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  padding: 30px 5%;
+}
+
+.feature-card{
+  background: var(--white);
+  padding: var(--space-3);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+}
 
 
 
@@ -202,4 +236,8 @@ header {
     padding: 10px 16px; 
     margin-bottom: var(--space-2);
   }
+
+  .why-member-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
 }
