@@ -46,7 +46,7 @@ body {
   html { 
     scroll-behavior: smooth; 
   }
-
+  
   img, video {
     width: 100%;
     height: 100%;
@@ -340,9 +340,7 @@ header {
 /* STARTUP REQUIREMENT SECTION STYLES BELOW */
 .startup-container {
   background: var(--cream-soft);
-  position: relative;
   padding: 65px 5% 98px;
-  border: 1px solid gray;
 }
 
 .startup-section-head h1 {
@@ -409,11 +407,20 @@ header {
 
 /* VIDEO MULTIMEDIA SECTION OF THE FOUNDER STYLE */
 .founder-message-container {
-  padding: 75px 5%;
-  transform: translateY();
+  padding: 20px 5%;
+  margin: -50px auto 0;
   position: relative;
-  background: red;
-  margin: 0 50px;
+  background: var(--white);
+  z-index: 2;
+  box-shadow: var(--shadow);
+  text-align: center;
+  max-width: 850px;
+}
+
+.founder-message-container h2 {
+  margin-bottom: var(--space-3);
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 3vw, 2.0rem);
 }
 
 
