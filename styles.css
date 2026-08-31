@@ -328,8 +328,32 @@ header {
 .left-hand-content p {
   color: var(--ink-soft);
   margin-bottom: 24px;
-  font-size: 24px;
+  font-size: 20px;
 }
+
+/* STARTUP REQUIREMENT SECTION STYLES BELOW */
+.startup-container {
+  background: var(--cream-soft);
+  position: relative;
+  height: 60vh;
+  padding: 75px 5%;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.startup-section-head h1 {
+  font-size: clamp(2.2rem, 5vw, 3.0rem);
+  max-width: 900px;
+  margin: 0 auto var(--space-3);
+}
+
+.startup-section-head p {
+  color: var(--ink-soft);
+  font-size: clamp(0.9rem, 3vw, 1.3rem);
+  max-width: 480px;
+  margin: 0 auto 32px;
+}
+
 
 
 
