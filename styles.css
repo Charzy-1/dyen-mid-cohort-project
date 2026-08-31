@@ -46,7 +46,13 @@ body {
   html { 
     scroll-behavior: smooth; 
   }
-  img { max-width: 100%; display: block; }
+
+  img, video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 
   a { text-decoration: none; color: inherit; }
 
@@ -400,6 +406,16 @@ header {
   font-size: 15px;
   color: var(--ink-soft);
 }
+
+/* VIDEO MULTIMEDIA SECTION OF THE FOUNDER STYLE */
+.founder-message-container {
+  padding: 75px 5%;
+  transform: translateY();
+  position: relative;
+  background: red;
+  margin: 0 50px;
+}
+
 
 
 
