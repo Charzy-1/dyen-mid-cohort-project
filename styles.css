@@ -78,7 +78,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 5%;
+  padding: 18px 5%;
   border-bottom: 1px solid var(--green-dark);
   backdrop-filter: blur(8px);
 }
