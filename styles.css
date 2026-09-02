@@ -477,6 +477,17 @@ header {
 .testi-card-title span { font-size: 12px; color: var(--ink-soft); }
 .testimonial-card p { font-size: 14px; color: var(--ink-soft); }
 
+/* FAQs STYLING COMES BELOW */
+.faq-containter {
+  padding: 75px 5%;
+}
+.faq-containter h2 {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 3vw, 3.0rem);
+  text-align: center;
+}
+
 
 
 
