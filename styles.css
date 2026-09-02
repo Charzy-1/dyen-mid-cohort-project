@@ -428,6 +428,20 @@ header {
   padding: 75px 5%;
 }
 
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  padding: var(--space-3);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
 .testi-section-head {
   text-align: center;
 }
@@ -447,10 +461,10 @@ header {
 }
 
 .testi-card-head img {
-  width: 56px;
-  height: 56px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  border: 4px solid var(--green-dark);
+  border: 4px solid var(--white);
   object-fit: conver;
 }
 
@@ -481,17 +495,11 @@ header {
     margin-bottom: var(--space-2);
   }
 
-  .why-member-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .fund-raising-grid {
+  .fund-raising-grid, 
+  .testimonial-grid, 
+  .why-member-grid,
+  .startup-section-grid {
     grid-template-columns: 1fr;
   }
-
-  .startup-section-grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
   
 }
